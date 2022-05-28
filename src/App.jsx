@@ -13,6 +13,7 @@ function App() {
   return (
     
     <>
+      
       <div className="bg-circle1"></div>
       <div className="bg-circle2"></div>
       <Nav />
