@@ -1,0 +1,42 @@
+.footer-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.container.footer-container h1 {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 100;
+  font-size: 25px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.container.footer-container h2 {
+  text-align: center;
+  text-transform: capitalize;
+  color: #ca5ce6;
+  font-family: "Dancing Script";
+  font-weight: 100;
+  font-size: 25px;
+  margin-top: 15px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-shadow: 0 0 0.2em #87F, 0 0 0.2em #87F,0 0 
+  0.2em #87F;
+}
+.container.footer-container h2:hover {
+  background-color: rgba(0, 0, 0, 0.068);
+}
+
