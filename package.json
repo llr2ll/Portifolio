@@ -1,7 +1,7 @@
 {
   "name": "ReplitReactjsProject",
   "version": "0.0.1",
-  "homepage": "main/",
+  "homepage": "Portifolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
