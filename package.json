@@ -1,7 +1,7 @@
 {
+  "homepage": "https://llr2ll.github.io/Portifolio",
   "name": "ReplitReactjsProject",
   "version": "0.0.1",
-  "homepage": "Portifolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
