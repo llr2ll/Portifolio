@@ -1,5 +1,5 @@
 import React from "react";
-import "./qt.css";
+import "./qualifications.css";
 
 
  import {FaReact} from 'react-icons/fa';

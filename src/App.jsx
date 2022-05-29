@@ -4,7 +4,7 @@ import Home from "./home/home";
 import Qualifications from './qualifications/qualifications';
 import Contact from './contact/contact';
 import Nav from './nav/nav';
-import CT from './ct/ct';
+import Certificates from './certificates/certificates';
 import Formation from "./formation/formation";
 import Experience from "./experience/experience";
 import Footer from "./footer/footer";
@@ -19,7 +19,7 @@ function App() {
       <Nav />
       <Home />
       <Qualifications />
-      <CT />
+      <Certificates />
       <Experience />
       <Formation />
       <Footer />

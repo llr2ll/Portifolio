@@ -9,15 +9,13 @@
 }
 
 body {
+  border: 1px solid red;
   background: rgb(2, 2, 26);
   min-height: 100vh;
   font-family: "Dancing Script", sans-serif;
   animation: move 1s linear infinite forwards;
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
 body::before {
   content: "";
@@ -37,6 +35,25 @@ body::after {
   background: rgb(183, 0, 255);
   filter: blur(140px);
 }
+:root {
+  --color-pri: rgb(82, 188, 250);
+  --color-pri-light: rgba(82, 188, 250, 0.445);
+  --color-sec: rgb(172, 17, 233);
+  --color-sec-light: rgba(172, 17, 233, 0.274);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .bg-circle1 {
   position: fixed;
   top: 0px;
@@ -59,33 +76,19 @@ body::after {
   width: 0;
 }
 
-:root {
-  --color-pri: rgb(82, 188, 250);
-  --color-pri-light: rgba(82, 188, 250, 0.445);
-  --color-sec: rgb(172, 17, 233);
-  --color-sec-light: rgba(172, 17, 233, 0.274);
 
-  --pc-width: 75%;
-  --tab-width: 90%;
-  --phone-width: 100%;
+html {
+  scroll-behavior: smooth;
 }
-
 .container {
   border-radius: 10px;
-  width: var(--pc-width);
-  color: var(--text-pri);
+  width: 75%;
   padding: 10px 40px;
   margin: 5px auto;
   padding: 10px 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@media (max-width: 500px) {
-  .container {
-    width: var(--phone-width);
-  }
 }
 
 .close {
@@ -102,7 +105,6 @@ body::after {
 .close:hover {
   opacity: 0.8;
 }
-
 
 .modal{
   margin: 0;

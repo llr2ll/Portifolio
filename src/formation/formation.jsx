@@ -1,11 +1,28 @@
 import "./formation.css";
 import React from "react";
 import Modal from 'react-modal';
-import img1 from '../jpg/JS_back-end.jpg';
-import img2 from '../jpg/React JS.jpg';
 
 const Formation = () => {
 
+  var data = [
+    {
+      id: 1,
+      title1: 'Javascript',
+      title2: 'Back-end',
+      text: 'Completed 7 training courses with a workload of 40 hours.',
+      thumb:'../jpg/teste1.png',
+      img:'../jpg/JS_back-end.jpg'
+    },
+    {
+      id: 2,
+      title1: 'React',
+      title2: 'JS',
+      text: 'Completed 9 training courses with an estimated workload of 100 hours.',
+      thumb:'../jpg/teste2.png',
+      img:'../jpg/React JS.jpg'
+    },
+  ]
+  
   Modal.setAppElement('#root');
   
   const [modalIsOpen, setIsOpen] = React.useState(false);
@@ -26,79 +43,43 @@ const Formation = () => {
   
   return (
     
-    <div id="formation" className="container members-container">
+      <main id="formation" className="container formation-container" >
       
-        <h1 className="member-txt">Formation</h1>
-        
-        <div className="member member-1">
+
+        <h1 className="formation-txt">Formation</h1>
+      
           
-              <div className="member-img" onClick={openModal}></div>
-              
-              <div className="member-info">
-                
-                  <h1 className="name">JavaScript</h1>
-                  
-                  <h3 className="position">Back-end</h3>
-                  
-                  <h4 className="about">
-                    Completed 7 training courses with a workload of 40 hours.
-                  </h4>
-                  
-                  <a href="#contact" className="contact-member">
-                    <span>contact</span>
-                  </a>
-                
-              </div>
+          {data.map((data) =>  
   
-          
-              <Modal isOpen={modalIsOpen}  onRequestClose={closeModal} className="modal">
+            <div key ={data.id} className="formation">
+              
+                    <img src={data.thumb} className="formation-img" onClick={openModal} />
                     
-                    <button className="close" onClick={ closeModal }>×</button>
-                    <img src={img1} className="img"></img>
-                    
-              </Modal>
-  
-          
-        </div>
-
-
-
-      <div className="member member-2">
+                    <div className="formation-info">
+                      
+                        <h1 className="name">{data.title1}</h1>
+                        
+                        <h3 className="position">{data.title2}</h3>
+                        
+                        <h4 className="about">{data.text}</h4>
+                        
+                        <a href="#contact" className="contact-formation"> <span>contact</span> </a>
+                      
+                    </div>
         
-          <div className="member-img2" onClick={openModal}></div>
-        
-          <div className="member-info">
-            
-              <h1 className="name">React</h1>
+                
+                    <Modal isOpen={modalIsOpen}  onRequestClose={closeModal} className="modal">
+                          
+                          <button className="close" onClick={closeModal}>×</button>
+                          <img src={data.img} className="img"></img>
+                          
+                    </Modal>
               
-              <h3 className="position">JS</h3>
-              
-              <h4 className="about">
-                Completed 9 training courses with an estimated workload of 100 hours
-              </h4>
-              
-              <a href="#contact" className="contact-member">
-                
-                <span>contact</span>
-                
-              </a>
-            
-          </div>
+            </div>
         
-           <Modal isOpen={modalIsOpen}  onRequestClose={closeModal} className="modal">
-                
-                <button className="close" onClick={ closeModal }>×</button>
-                <img src={img2} className="img"></img>
-                
-           </Modal>
-        
-      </div>
+          )}
       
-      
-
-      
-    </div>
-
+    </main>
     
     
   );
