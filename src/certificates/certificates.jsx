@@ -1,13 +1,14 @@
-import React from "react";
 import './certificates.css';
+import React from "react";
 import Modal from 'react-modal';
+
 //https://codepen.io/arthurcamara1/pen/KaMBZg
 //https://www.pluralsight.com/guides/iterate-through-a-json-response-in-jsx-render-for-reactjs
 //https://www.devmedia.com.br/react-js-utilizando-o-metodo-map/42902
 //https://www.npmjs.com/package/react-modal
 
-export default function Certificates() {
-
+const Certificates = () => {
+  
 var data = [
        {
           id: 1,
@@ -44,17 +45,14 @@ var data = [
   const [modalIsOpen, setIsOpen] = React.useState(false);
 
   function openModal(){
-
     setIsOpen(true);
-     
   }
 
   
  function closeModal(){
-   
-   setIsOpen(false);
-   
+   setIsOpen(false);   
  }
+
   
   return (
 
@@ -67,8 +65,8 @@ var data = [
         <section className="Grid">
           
           {data.map((data) =>  
-  
-            <div key ={data.id} onClick={openModal} className="Grid-row">
+
+            <div key={data.id} onClick={openModal} className="Grid-row">
               
                 <a className="Card">
                 
@@ -86,14 +84,10 @@ var data = [
                   <button className="Card-button">view more</button>
                   
                 </a>
-                  
-                <Modal isOpen={modalIsOpen}  onRequestClose={closeModal} className="modal">
+              
+                <Modal isOpen={modalIsOpen}  onRequestClose={closeModal} className="modalCT">
                         
-                        <button className="close" onClick={closeModal}>×</button>
-                  
-                        <img src={data.img1} />
-                        <img src={data.img2} />
-                        <img src={data.img3} />            
+                        <button className="closeCT" onClick={closeModal}>×</button>
                   
                 </Modal>
               
@@ -110,4 +104,6 @@ var data = [
       
           
   );
-}
+};
+
+export default Certificates;

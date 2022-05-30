@@ -35,12 +35,12 @@ body::after {
   background: rgb(183, 0, 255);
   filter: blur(140px);
 }
+
 :root {
   --color-pri: rgb(82, 188, 250);
   --color-pri-light: rgba(82, 188, 250, 0.445);
   --color-sec: rgb(172, 17, 233);
   --color-sec-light: rgba(172, 17, 233, 0.274);
-
 }
 
 
@@ -76,10 +76,10 @@ body::after {
   width: 0;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
+
 .container {
   border-radius: 10px;
   width: 75%;
@@ -89,27 +89,4 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.close {
-  align-itens: center;
-  position: absolute;
-  background: none;
-  border:none;
-  right: 1rem;
-  font-size: 60px;
-  opacity: 0.5;
-  cursor: pointer;
-}
-
-.close:hover {
-  opacity: 0.8;
-}
-
-.modal{
-  margin: 0;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.500);
-  width:100%;
-  height: 100%;
 }

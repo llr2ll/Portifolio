@@ -2,6 +2,12 @@ import "./formation.css";
 import React from "react";
 import Modal from 'react-modal';
 
+
+//      thumb:'../jpg/teste1.png',
+//      img:'../jpg/JS_back-end.jpg'
+//            thumb:'../jpg/teste2.png',
+ //           img:'../jpg/React JS.jpg'
+
 const Formation = () => {
 
   var data = [
@@ -10,16 +16,14 @@ const Formation = () => {
       title1: 'Javascript',
       title2: 'Back-end',
       text: 'Completed 7 training courses with a workload of 40 hours.',
-      thumb:'../jpg/teste1.png',
-      img:'../jpg/JS_back-end.jpg'
+
     },
     {
       id: 2,
       title1: 'React',
       title2: 'JS',
       text: 'Completed 9 training courses with an estimated workload of 100 hours.',
-      thumb:'../jpg/teste2.png',
-      img:'../jpg/React JS.jpg'
+
     },
   ]
   
@@ -36,7 +40,7 @@ const Formation = () => {
   
  function closeModal(){
    
-   setIsOpen(false);
+    setIsOpen(false);
    
  }
   
@@ -68,11 +72,11 @@ const Formation = () => {
                     </div>
         
                 
-                    <Modal isOpen={modalIsOpen}  onRequestClose={closeModal} className="modal">
+                    <Modal isOpen={modalIsOpen}  onRequestClose={closeModal} className="modalFT">
                           
-                          <button className="close" onClick={closeModal}>×</button>
+                          <button className="closeFT" onClick={closeModal}>×</button>
                           <img src={data.img} className="img"></img>
-                          
+                      
                     </Modal>
               
             </div>
