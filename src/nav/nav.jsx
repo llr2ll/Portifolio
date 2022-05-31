@@ -13,7 +13,7 @@ function Nav() {
     <nav>
       <a href="#home"><AiOutlineHome /></a>
       <a href="#about"><BiCodeBlock /></a>
-      <a href="#ct"><RiGalleryLine /></a>
+      <a href="#certificates"><RiGalleryLine /></a>
       <a href="#formation"><BiBookBookmark /></a>
       <a href="#footer"><FiSmartphone /></a>
     </nav>

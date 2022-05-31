@@ -1,11 +1,7 @@
 import './certificates.css';
 import React from "react";
-import Modal from 'react-modal';
+import Window from '../window/window';
 
-//https://codepen.io/arthurcamara1/pen/KaMBZg
-//https://www.pluralsight.com/guides/iterate-through-a-json-response-in-jsx-render-for-reactjs
-//https://www.devmedia.com.br/react-js-utilizando-o-metodo-map/42902
-//https://www.npmjs.com/package/react-modal
 
 const Certificates = () => {
   
@@ -36,23 +32,9 @@ var data = [
           img1: 'https://robohash.org/1',
           img2: 'https://robohash.org/1',
           img3: 'https://robohash.org/1'
-        }
+        },
+
 ]
-  
-
-  Modal.setAppElement('#root');
-  
-  const [modalIsOpen, setIsOpen] = React.useState(false);
-
-  function openModal(){
-    setIsOpen(true);
-  }
-
-  
- function closeModal(){
-   setIsOpen(false);   
- }
-
   
   return (
 
@@ -60,13 +42,13 @@ var data = [
     <main id="certificates" >
       
 
-        <h1 className="txt">Formation</h1>
+        <h1 className="txt">Certificates</h1>
       
         <section className="Grid">
           
           {data.map((data) =>  
 
-            <div key={data.id} onClick={openModal} className="Grid-row">
+            <div key={data.id} onClick={open} className="Grid-row">
               
                 <a className="Card">
                 
@@ -84,13 +66,8 @@ var data = [
                   <button className="Card-button">view more</button>
                   
                 </a>
-              
-                <Modal isOpen={modalIsOpen}  onRequestClose={closeModal} className="modalCT">
-                        
-                        <button className="closeCT" onClick={closeModal}>×</button>
-                  
-                </Modal>
-              
+
+                <Window></Window>
             </div>
         
           )}

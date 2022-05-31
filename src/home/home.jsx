@@ -42,8 +42,8 @@ function Home() {
       <h2>
         <span>About Me</span> <br />
         <p>
-          Hi, I'm Raphael Sanseverino an Javascript developer with technical and hands-on experience whose passion is to produce websites that users will enjoy interacting 
-          with. I'm an entrepreneur and I'm thirsty to learn.
+          Hi, I'm Raphael Sanseverino, a Javascript developer with technical and hands-on experience whose passion is to produce websites that users will enjoy interacting 
+          with. I'm an entrepreneur and I'm thirsty for knowledge.
         </p>
       </h2>
 

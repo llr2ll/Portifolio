@@ -1,6 +1,6 @@
 import "./formation.css";
 import React from "react";
-import Modal from 'react-modal';
+import Window from '../window/window';
 
 
 //      thumb:'../jpg/teste1.png',
@@ -27,24 +27,6 @@ const Formation = () => {
     },
   ]
   
-  Modal.setAppElement('#root');
-  
-  const [modalIsOpen, setIsOpen] = React.useState(false);
-
-  function openModal(){
-
-    setIsOpen(true);
-     
-  }
-
-  
- function closeModal(){
-   
-    setIsOpen(false);
-   
- }
-  
-  
   return (
     
       <main id="formation" className="container formation-container" >
@@ -57,7 +39,7 @@ const Formation = () => {
   
             <div key ={data.id} className="formation">
               
-                    <img src={data.thumb} className="formation-img" onClick={openModal} />
+                    <img src={data.thumb} className="formation-img" onClick={<Window/>} />
                     
                     <div className="formation-info">
                       
@@ -72,12 +54,7 @@ const Formation = () => {
                     </div>
         
                 
-                    <Modal isOpen={modalIsOpen}  onRequestClose={closeModal} className="modalFT">
-                          
-                          <button className="closeFT" onClick={closeModal}>×</button>
-                          <img src={data.img} className="img"></img>
-                      
-                    </Modal>
+                    <Window> <img src={data.img} className="img"></img> </Window>
               
             </div>
         
