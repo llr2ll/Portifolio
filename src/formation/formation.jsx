@@ -1,5 +1,6 @@
 import "./formation.css";
 import React from "react";
+import ReactDom from 'react-dom';
 import Window from '../window/window';
 
 
@@ -7,6 +8,9 @@ import Window from '../window/window';
 //      img:'../jpg/JS_back-end.jpg'
 //            thumb:'../jpg/teste2.png',
  //           img:'../jpg/React JS.jpg'
+
+
+//       <Window> <img src={data.img} className="img"></img> </Window>
 
 const Formation = () => {
 
@@ -27,6 +31,12 @@ const Formation = () => {
     },
   ]
   
+  function open() {
+    const root = ReactDom.createRoot(document.getElementById('modalTarget'));
+    const window = React.createElement(Window, {modalContent: data}, null);
+    root.render(window);
+  }
+
   return (
     
       <main id="formation" className="container formation-container" >
@@ -39,7 +49,7 @@ const Formation = () => {
   
             <div key ={data.id} className="formation">
               
-                    <img src={data.thumb} className="formation-img" onClick={<Window/>} />
+                    <img src={data.thumb} className="formation-img" onClick={open} />
                     
                     <div className="formation-info">
                       
@@ -54,7 +64,7 @@ const Formation = () => {
                     </div>
         
                 
-                    <Window> <img src={data.img} className="img"></img> </Window>
+             
               
             </div>
         

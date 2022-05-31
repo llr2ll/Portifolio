@@ -1,5 +1,7 @@
+
 import './certificates.css';
 import React from "react";
+import ReactDom from 'react-dom';
 import Window from '../window/window';
 
 
@@ -32,15 +34,18 @@ var data = [
           img1: 'https://robohash.org/1',
           img2: 'https://robohash.org/1',
           img3: 'https://robohash.org/1'
-        },
+        }
+  ]
 
-]
-  
+  function open() {
+    const root = ReactDom.createRoot(document.getElementById('modalTarget'));
+    const window = React.createElement(Window, {modalContent: data}, null);
+    root.render(window);
+  }
+
   return (
-
       
     <main id="certificates" >
-      
 
         <h1 className="txt">Certificates</h1>
       
@@ -66,20 +71,15 @@ var data = [
                   <button className="Card-button">view more</button>
                   
                 </a>
-
-                <Window></Window>
+          
             </div>
         
           )}
                 
         </section>
-
-      
       
     </main>
-      
-      
-          
+        
   );
 };
 
