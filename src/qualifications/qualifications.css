@@ -61,315 +61,44 @@
   margin-bottom: 5px;
 }
 
-.qualifications-container .qualification .content.html {
+.qualifications-container .qualification .content.framework {
   font-size: 4rem;
-  color: orangered;
   background-position: center;
   background-size: 66px;
 }
-
-.qualifications-container .qualification .content.css {
-  font-size: 4rem;
-  color: skyblue;
-  background-position: center;
-  background-size: cover;
-  background-size: 66px;
-}
-
-.qualifications-container .qualification .content.javascript {
-  font-size: 4rem;
-  color: yellow;
-  background-position: center;
-  background-size: cover;
-  background-size: 90px;
-}
-.qualifications-container .qualification .content.nodejs {
-  font-size: 4rem;
-  color: green;
-  background-position: center;
-  background-size: cover;
-  background-size: 66px;
-}
-.qualifications-container .qualification .content.react {
-  font-size: 4rem;
-  color: lightblue;
-  background-position: center;
-  background-size: cover;
-  background-size: 66px;
-}
-.qualifications-container .qualification .content.electron {
-  font-size: 4rem;
-  color: gray;
-  background-position: center;
-  background-size: cover;
-  background-size: 66px;
-}
-.qualifications-container .qualification .content.laravel {
-  font-size: 4rem;
-  color: orangered;
-  background-position: center;
-  background-size: cover;
-  background-size: 66px;
-}
-.qualifications-container .qualification .content.php {
-  font-size: 4rem;
-  color: lightblue;
-  background-position: center;
-  background-size: cover;
-  background-size: 66px;
-}
-
-.qualifications-container .qualification .content.mysql {
-  font-size: 4rem;
-  color: darkblue;
-  background-position: center;
-  background-size: cover;
-  background-size: 66px;
-}
-
-
-.qualifications-container .qualification .content.typescript {
-  font-size: 4rem;
-  color: royalblue;
-  background-position: center;
-  background-size: cover;
-  background-size: 66px;
-}
-
-
-.qualifications-container .qualification .content.composer {
-  font-size: 4rem;
-  color: saddlebrown;
-  background-position: center;
-  background-size: cover;
-  background-size: 66px;
-}
-
-.qualifications-container .qualification .content.xamp {
-  font-size: 4rem;
-  color: orange;
-  background-position: center;
-  background-size: cover;
-  background-size: 66px;
-}
-
-
-.qualifications-container .qualification .content.vue {
-  font-size: 4rem;
-  color: green;
-  background-position: center;
-  background-size: cover;
-  background-size: 66px;
-}
-
-.qualifications-container .qualification .content.dart {
-  font-size: 4rem;
-  color: royalblue;
-  background-position: center;
-  background-size: cover;
-  background-size: 66px;
-}
-
-
-.qualifications-container .qualification .content.json {
-  font-size: 4rem;
-  color: slategray;
-  background-position: center;
-  background-size: cover;
-  background-size: 66px;
-}
-
-.qualifications-container .qualification .content.git {
-  font-size: 4rem;
-  color: orangered;
-  background-position: center;
-  background-size: cover;
-  background-size: 66px;
-}
-
-
-.qualifications-container .qualification .content.github {
-  font-size: 4rem;
-  color: gray;
-  background-position: center;
-  background-size: cover;
-  background-size: 66px;
-}
-
-.qualifications-container .qualification .content.http {
-  font-size: 4rem;
-  color: dodgerblue;
-  background-position: center;
-  background-size: cover;
-  background-size: 66px;
-}
-
-.qualifications-container .qualification .content.arch {
-  font-size: 4rem;
-  color: steelblue;
-  background-position: center;
-  background-size: cover;
-  background-size: 66px;
-}
-
-.qualifications-container .qualification .content.kali {
-  font-size: 4rem;
-  color: lightblue;
-  background-position: center;
-  background-size: cover;
-  background-size: 66px;
-}
-
-.qualifications-container .qualification .content.photoshop {
-  font-size: 4rem;
-  color: royalblue;
-  background-position: center;
-  background-size: cover;
-  background-size: 66px;
-}
-
-.qualifications-container .qualification .content.blender {
-  font-size: 4rem;
-  color: orangered;
-  background-position: center;
-  background-size: cover;
-  background-size: 66px;
-}
-
-.qualifications-container .qualification .content.unreal {
-  font-size: 4rem;
-  color: gray;
-  background-position: center;
-  background-size: cover;
-  background-size: 66px;
-}
-
-.qualifications-container .qualification .content.unity {
-  font-size: 4rem;
-  color: black;
-  background-position: center;
-  background-size: cover;
-  background-size: 66px;
-}
-
-.qualifications-container .qualification .content.wordpress {
-  font-size: 4rem;
-  color: skyblue;
-  background-position: center;
-  background-size: cover;
-  background-size: 66px;
-}
-
-
-
 
 @media (max-width: 820px) {
-  .quali-text {
 
-  }
-
-  .qualifications-container {
- 
-  }
-
-  .qualification {
-
-  }
-
-  .qualifications-container .qualification .content {
-
-  }
-
-  .qualifications-container .qualification h1 {
-
-  }
 }
 
 @media (max-width: 500px) {
-  .quali-text {
 
-  }
-
-  .qualifications-container {
-
-  }
-
-  .qualifications-container .qualification {
-
-  }
-
-  .qualifications-container .qualification .content {
-
-  }
-
-  .qualifications-container .qualification h1 {
-
-  }
 }
 
 @media (max-width: 420px) {
-  .quali-text {
 
-  }
-
-  .qualifications-container {
-
-  }
-
-  .qualifications-container .qualification {
-
-  }
-
-  .qualifications-container .qualification .content {
-
-  }
-
-  .qualifications-container .qualification h1 {
-
-  }
 }
 
 
 @media (max-width: 400px) {
-  .quali-text {
 
-  }
-
-  .qualifications-container {
-
-  }
-
-  .qualifications-container .qualification {
-
-  }
-
-  .qualifications-container .qualification .content {
-
-  }
-
-  .qualifications-container .qualification h1 {
-
-  }
 }
 
 @media (max-width: 375px) {
-  .quali-text {
-
+  .about-container {
+    display:flex;
+    padding: 10px;
+    margin: 0px 20px 0px 20px;
+  }
+ .qualifications-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
   }
 
-  .qualifications-container {
-
-  }
-
-  .qualifications-container .qualification {
-
-  }
-
-  .qualifications-container .qualification .content {
-
-  }
-
-  .qualifications-container .qualification h1 {
-
+  .qualification {
+    width: 90%;
   }
 }

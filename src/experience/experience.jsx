@@ -1,7 +1,7 @@
 import React from "react";
 import "./experience.css";
-import unimes from "../jpg/unimes.png";
-import hercules from "../jpg/hercules.png"
+import unimes from "/jpg/unimes.png";
+import hercules from "/jpg/hercules.png"
 
 
 function Experience() {

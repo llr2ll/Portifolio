@@ -10,13 +10,14 @@ import Experience from "./experience/experience";
 import Footer from "./footer/footer";
 
 function App() {
-  return (
+  
     
+  return (
     <>
-      
+      <div id="modalTarget"></div>
       <div className="bg-circle1"></div>
       <div className="bg-circle2"></div>
-      <Nav />
+      <Nav/>
       <Home />
       <Qualifications />
       <Certificates />

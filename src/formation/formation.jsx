@@ -2,35 +2,10 @@ import "./formation.css";
 import React from "react";
 import ReactDom from 'react-dom';
 import Window from '../window/window';
-
-
-//      thumb:'../jpg/teste1.png',
-//      img:'../jpg/JS_back-end.jpg'
-//            thumb:'../jpg/teste2.png',
- //           img:'../jpg/React JS.jpg'
-
-
+import {data} from './data';
 //       <Window> <img src={data.img} className="img"></img> </Window>
-
 const Formation = () => {
 
-  var data = [
-    {
-      id: 1,
-      title1: 'Javascript',
-      title2: 'Back-end',
-      text: 'Completed 7 training courses with a workload of 40 hours.',
-
-    },
-    {
-      id: 2,
-      title1: 'React',
-      title2: 'JS',
-      text: 'Completed 9 training courses with an estimated workload of 100 hours.',
-
-    },
-  ]
-  
   function open() {
     const root = ReactDom.createRoot(document.getElementById('modalTarget'));
     const window = React.createElement(Window, {modalContent: data}, null);
@@ -41,9 +16,7 @@ const Formation = () => {
     
       <main id="formation" className="container formation-container" >
       
-
         <h1 className="formation-txt">Formation</h1>
-      
           
           {data.map((data) =>  
   
@@ -62,17 +35,13 @@ const Formation = () => {
                         <a href="#contact" className="contact-formation"> <span>contact</span> </a>
                       
                     </div>
-        
-                
-             
               
             </div>
         
           )}
       
     </main>
-    
-    
+  
   );
 };
 
