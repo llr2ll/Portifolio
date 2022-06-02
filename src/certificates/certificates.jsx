@@ -11,7 +11,7 @@ const Certificates = () => {
     const window = React.createElement(Window, {modalContent: data}, null);
     root.render(window);
   }
-
+console.log(data);
   return (
       
     <main id="certificates" >
