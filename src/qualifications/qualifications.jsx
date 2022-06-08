@@ -3,7 +3,7 @@ import "./qualifications.css";
 import {data} from './data';
 
 const Qualifications = () => {
-  
+
   return (
     
     <div id="about">
@@ -16,9 +16,9 @@ const Qualifications = () => {
             
           {data.map((data) =>  
       
-            <div key ={data.id} className="qualification">
+            <div key ={data.id} className="qualification" >
   
-              <div className="content framework" style={{color:data.color}}>{data.img}</div>
+              <div className="content framework" style={{ color:data.color }}>{data.img}</div>
               <h1>{data.title}</h1>
               
             </div>

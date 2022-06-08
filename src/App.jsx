@@ -10,7 +10,6 @@ import Experience from "./experience/experience";
 import Footer from "./footer/footer";
 
 function App() {
-  
     
   return (
     <>

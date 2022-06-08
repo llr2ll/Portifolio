@@ -167,7 +167,7 @@ export const data =
     },
     {
       id: 24,
-      color: "black",
+      color: "rgb(0, 0, 0)",
       img: <SiUnity />,
       title: "Unity"
     },

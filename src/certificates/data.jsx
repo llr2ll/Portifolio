@@ -1,65 +1,185 @@
 import React from "react";
 export const data =
-  [
-       {
+    [
+      {
           id: 1,
           thumb: '../jpg/JS_back-end.jpg',
           title: 'Javascript',
           title2: 'js',
-          img1: '../jpg/fundamentos-js-variaveis.jpg',
-          img2: '../jpg/fundamentos-js-arrays.jpg',
-          img3: '../jpg/fundamentos-js-objetos.jpg',
-          img4: '../jpg/JS_inicio.jpg',
-          img5: '../jpg/JS_back-end.jpg',
-          img6: '../jpg/JS_herança.jpg',
-          img7: '../jpg/JS_orientacao_a_objetos.jpg',
-          img8: '../jpg/JS_web.jpg',
-          img9: '../jpg/JS.jpg',
-          img10:'../jpg/Typescript_1.jpg',
-          img11:'../jpg/Typescript_2.jpg'
-        },
-        {
+          content: [
+                  {
+                    id: 1,
+                    img: '../jpg/fundamentos-js-variaveis.jpg'
+                  },
+                  {
+                    id: 2,
+                    img: '../jpg/fundamentos-js-arrays.jpg'
+                  },
+                  {
+                    id:3,
+                    img: '../jpg/fundamentos-js-objetos.jpg'
+                  },
+                  {
+                    id:4,
+                    img: '../jpg/JS_inicio.jpg'
+                  },
+                  {
+                    id: 5,
+                    img: '../jpg/JS_back-end.jpg'
+                  },
+                  {
+                    id:6,
+                    img: '../jpg/JS_herança.jpg'
+                  },
+                  {
+                    id:7,
+                    img: '../jpg/JS_orientacao_a_objetos.jpg'
+                  },
+                  {
+                    id: 8,
+                    img: '../jpg/JS_web.jpg'
+                  },
+                  {
+                    id:9,
+                    img: '../jpg/JS.jpg'
+                  },
+                  {
+                    id:10,
+                    img:'../jpg/Typescript_1.jpg'
+                  },
+                  {
+                    id:11,
+                    img:'../jpg/Typescript_2.jpg'
+                  }
+              ]
+      },
+      {
           id: 2,
           thumb: '../jpg/React_JS.jpg',
           title: 'React',
           title2: 'React',
-          img1: '../jpg/React_ciclo_de_vida.jpg',
-          img2: '../jpg/React_components.jpg',
-          img3: '../jpg/React_funcionamento.jpg',
-          img4: '../jpg/React_function.jpg',
-          img5: '../jpg/React_hooks.jpg',
-          img6: '../jpg/React_JS.jpg',
-          img7: '../jpg/React_router.jpg',
-          img8: '../jpg/React_testes.jpg',
-        },
-        {
+          content: [
+                    {
+                      id: 1,
+                      img: '../jpg/React_ciclo_de_vida.jpg'
+                    },
+                    {
+                      id: 2,
+                      img: '../jpg/React_components.jpg'
+                    },
+                    {
+                      id:3,
+                      img: '../jpg/React_funcionamento.jpg'
+                    },
+                    {
+                      id:4,
+                      img: '../jpg/React_function.jpg'
+                    },
+                    {
+                      id: 5,
+                      img: '../jpg/React_hooks.jpg'
+                    },
+                    {
+                      id:6,
+                      img: '../jpg/React_JS.jpg'
+                    },
+                    {
+                      id:7,
+                      img: '../jpg/React_router.jpg'
+                    },
+                    {
+                      id: 8,
+                      img: '../jpg/React_testes.jpg'
+                    }
+          ]
+      },
+      {
           id: 3,
           thumb: '../jpg/HTML5_e_CSS3_4.jpg',
           title: 'Html & Css',
-          title2: 'React',
-          img1: '../jpg/HTML5_e_CSS3_1.jpg',
-          img2: '../jpg/HTML5_e_CSS3_2.jpg',
-          img3: '../jpg/HTML5_e_CSS3_3.jpg',
-          img4: '../jpg/HTML5_e_CSS3_4.jpg',
-          img5: '../jpg/arquitetura_css.jpg',
-          img6: '../jpg/bootstrap_4.jpg',
-          img7: '../jpg/css_grid.jpg',
-          img8: '../jpg/flexbox.jpg'
-        },
-        {
+          title2: 'Html & Css',
+          content: [
+                        {
+                          id: 1,
+                          img: '../jpg/HTML5_e_CSS3_1.jpg'
+                        },
+                        {
+                          id: 2,
+                          img: '../jpg/HTML5_e_CSS3_2.jpg'
+                        },
+                        {
+                          id:3,
+                          img: '../jpg/HTML5_e_CSS3_3.jpg'
+                        },
+                        {
+                          id:4,
+                          img: '../jpg/HTML5_e_CSS3_4.jpg'
+                        },
+                        {
+                          id: 5,
+                          img: '../jpg/arquitetura_css.jpg'
+                        },
+                        {
+                          id:6,
+                          img: '../jpg/bootstrap_4.jpg'
+                        },
+                        {
+                          id:7,
+                          img: '../jpg/css_grid.jpg'
+                        },
+                        {
+                          id: 8,
+                          img: '../jpg/flexbox.jpg'
+                        }
+
+          ]
+      },
+      {
           id: 4,
           thumb: '../jpg/Blender.jpg',
           title: 'Others',
           title2: 'Others',
-          img1: '../jpg/Acessibilidade_web.jpg',
-          img2: '../jpg/Acessibilidade_web_1.jpg',
-          img3: '../jpg/Blender.jpg',
-          img4: '../jpg/dart.jpg', 
-          img4: '../jpg/git_e_github.jpg',
-          img5: '../jpg/HTTP.jpg',
-          img6: '../jpg/Linux.jpg',
-          img7: '../jpg/Logica_de_programacao.jpg',
-          img8: '../jpg/Logica_de_programacao_2.jpg',
-          img9: '../jpg/Rest_com_nodeJS.jpg',
-        }
-  ]
+          content: [
+                        {
+                          id: 1,
+                          img: '../jpg/Acessibilidade_web.jpg'
+                        },
+                        {
+                          id: 2,
+                          img: '../jpg/Acessibilidade_web_1.jpg'
+                        },
+                        {
+                          id:3,
+                          img: '../jpg/Blender.jpg'
+                        },
+                        {
+                          id:4,
+                          img: '../jpg/dart.jpg', 
+                        },
+                        {
+                          id: 5,
+                         img: '../jpg/git_e_github.jpg'
+                        },
+                        {
+                          id:6,
+                          img: '../jpg/HTTP.jpg'
+                        },
+                        {
+                          id:7,
+                          img: '../jpg/Linux.jpg',
+                        },
+                        {
+                          id: 8,
+                          img: '../jpg/Logica_de_programacao.jpg'
+                        },
+                        {
+                          id:9,
+                          img: '../jpg/Logica_de_programacao_2.jpg'
+                        },
+                        {
+                          id: 10,
+                          img: '../jpg/Rest_com_nodeJS.jpg'
+                        }
+          ]
+      }
+    ]

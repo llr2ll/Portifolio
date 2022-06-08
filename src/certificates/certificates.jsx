@@ -1,28 +1,22 @@
 import './certificates.css';
 import React from "react";
-import ReactDom from 'react-dom';
 import Window from '../window/window';
 import {data} from './data';
+import Content from './content'
 
-const Certificates = () => {
-  
-  function open() {
-    const root = ReactDom.createRoot(document.getElementById('modalTarget'));
-    const window = React.createElement(Window, {modalContent: data}, null);
-    root.render(window);
-  }
-console.log(data);
+const Certificates = (props) => {
+
   return (
-      
+
     <main id="certificates" >
 
         <h1 className="txt">Certificates</h1>
       
         <section className="Grid">
           
-          {data.map((data) =>  
+          {data.map( (obj) =>  
 
-            <div key={data.id} onClick={open} className="Grid-row">
+            <div key={obj.id} className="Grid-row">
               
                 <a className="Card">
                 
@@ -31,16 +25,19 @@ console.log(data);
                     <div className="Card-shadow"></div>
                     <div className="Card-shadow"></div>
                     <div className="Card-shadow"></div>
-                    <img className="Card-image" src={data.thumb} />
+                    <img className="Card-image" src={obj.thumb} />
                     
+                    <Window > <Content jsonFilter={obj} /> </Window>
                   </div>
                     
-                  <div className="Card-title"> <span>{data.title}</span> </div>
-                  <div className="Card-explore"> <span>Explore More {data.title2}</span> </div>
-                  <button className="Card-button">view more</button>
+                  <div className="Card-title"> <span>{obj.title}</span> </div>
+                  <div className="Card-explore"> <span>Explore More {obj.title2}</span> </div>
+                  
                   
                 </a>
-          
+              
+                    
+
             </div>
         
           )}

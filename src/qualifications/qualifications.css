@@ -1,3 +1,5 @@
+/*https://codepen.io/MauriciAbad/pen/WNrpmPr*/
+/*https://codepen.io/FlorinCornea/pen/KKpvRYo*/
 #about{
   margin-top: 100px;
   margin-bottom: 100px;
@@ -44,7 +46,14 @@
 }
 
 .qualification:hover{
-  transform: scale(1.1);
+  animation: spin 2s linear infinite;
+  border: 2.5px dashed red;
+}
+
+@keyframes spin { 
+  100% { 
+    transform: rotateY(360deg);
+  }
 }
 
 .qualifications-container .qualification .content {
@@ -86,6 +95,8 @@
 
 @media (max-width: 375px) {
   .about-container {
+    overflow: scroll;
+    height: 620px;
     display:flex;
     padding: 10px;
     margin: 0px 20px 0px 20px;
@@ -93,7 +104,7 @@
  .qualifications-container {
     display: flex;
     width: 100%;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     flex-direction: column;
   }

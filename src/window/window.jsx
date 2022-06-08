@@ -2,28 +2,27 @@ import './window.css';
 import React from "react";
 import Modal from 'react-modal';
 
-
 //https://codepen.io/arthurcamara1/pen/KaMBZg
-//https://www.pluralsight.com/guides/iterate-through-a-json-response-in-jsx-render-for-reactjs
-//https://www.devmedia.com.br/react-js-utilizando-o-metodo-map/42902
-//https://www.npmjs.com/package/react-modal
 
-const Window = ({modalContent = ''}) => {
-  const [modalIsOpen, setIsOpen] = React.useState(true);
+const Window = (props) => {
+  
+  const [modalIsOpen, setIsOpen] = React.useState(false);
 
-  function openModal(){
-    setIsOpen(true);  
-  }
-
- function closeModal(){
-    setIsOpen(false);
- }
+  const toggle = () => setIsOpen(!modalIsOpen);
 
   return (
-         <Modal isOpen={modalIsOpen}  onRequestClose={closeModal} className="modal">
+    <>
+          
+         <button className="Card-button" onClick={toggle}>view more</button>
+
+         <Modal isOpen={modalIsOpen} ariaHideApp={false}  onRequestClose={toggle} className="modal">
            
-            <button className="close" onClick={closeModal}>×</button>                      
+             {props.children}
+           
+            <button className="close" onClick={toggle}>×</button>  
           </Modal>
+  
+    </>
   );
 };
 

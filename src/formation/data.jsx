@@ -6,7 +6,7 @@ export const data =
       title1: 'Javascript',
       title2: 'Back-end',
       thumb: '../jpg/teste1.png',
-      img: '../jpg/JS_back-end',
+      img: '../jpg/JS_back-end.jpg',
       text: 'Completed 7 training courses with a workload of 40 hours.',
     },
     {
