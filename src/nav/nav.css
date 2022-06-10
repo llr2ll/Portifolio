@@ -12,24 +12,18 @@ nav {
   border-radius: 3rem;
   backdrop-filter: blur(15px);
 }
-
-nav a {
-  
+nav a { 
   background: transparent;
   padding: 0.6rem;
   border-radius: 50%;
   display: flex;
   color: rgb(123, 180, 219);
   font-size:1.3rem;
-  
 }
-
 nav a:hover{
   background: rgba(0,0,0,0.2);
   border-radius: 3rem;
 }
-
-
 .hideNav{
   display: none;
 }

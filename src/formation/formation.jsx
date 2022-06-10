@@ -24,7 +24,8 @@ const Formation = () => {
               
                     <div className="warp">
                       <img className="formation-img" src={obj.thumb} />
-                      <Window className="warp">  <img className="img" src={obj.img}/> </Window>  
+                      <button className="button">view more</button>  
+                      <Window className="warp"> <img className="img" src={obj.img}/> </Window>  
                     </div>
 
                     <div className="formation-info">

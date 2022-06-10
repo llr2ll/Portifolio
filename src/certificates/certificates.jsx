@@ -20,8 +20,7 @@ const Certificates = (props) => {
               
                 <a className="Card">
                 
-                  <div className="Card-thumb">
-                    
+                  <div className="Card-thumb">                    
                     <div className="Card-shadow"></div>
                     <div className="Card-shadow"></div>
                     <div className="Card-shadow"></div>
@@ -32,11 +31,8 @@ const Certificates = (props) => {
                     
                   <div className="Card-title"> <span>{obj.title}</span> </div>
                   <div className="Card-explore"> <span>Explore More {obj.title2}</span> </div>
-                  
-                  
+
                 </a>
-              
-                    
 
             </div>
         

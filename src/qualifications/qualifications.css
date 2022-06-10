@@ -1,10 +1,7 @@
-/*https://codepen.io/MauriciAbad/pen/WNrpmPr*/
-/*https://codepen.io/FlorinCornea/pen/KKpvRYo*/
 #about{
   margin-top: 100px;
   margin-bottom: 100px;
 }
-
 .quali-text {
   font-size: 40px;
   top: 10px;
@@ -16,7 +13,6 @@
   justify-content: center;
   margin-bottom: 20px ;
 }
-
 .about-container {
   display: grid;
   padding: 50px;
@@ -25,16 +21,13 @@
   background: rgba(0, 0, 0, 0.300);
   backdrop-filter: blur(20px);
 }
-
 .about-container:hover{
   background: rgba(0, 0, 0, 0.400);
 }
-
 .qualifications-container{
   display: flex;
   flex-wrap: wrap;
 }
-
 .qualification {
   width: 18%;
   background: rgba(0, 0, 0, 0.500);
@@ -44,24 +37,20 @@
   flex-direction: column;
   align-items: center;
 }
-
 .qualification:hover{
   animation: spin 2s linear infinite;
   border: 2.5px dashed red;
 }
-
 @keyframes spin { 
   100% { 
     transform: rotateY(360deg);
   }
 }
-
 .qualifications-container .qualification .content {
   height: 75%;
   border-radius: 15px;
   margin-top: 20px;
 }
-
 .qualifications-container .qualification h1 {
   font-size: 20px;
   color: rgb(82, 188, 250);
@@ -69,28 +58,27 @@
   margin-top: 20px;
   margin-bottom: 5px;
 }
-
 .qualifications-container .qualification .content.framework {
   font-size: 4rem;
   background-position: center;
   background-size: 66px;
 }
 
+@media (max-width: 1024px) {
+  .qualifications-container{
+    justify-content: center;
+  }
+  .qualification {
+    width: 29%;
+  }
+}
 @media (max-width: 820px) {
-
-}
-
-@media (max-width: 500px) {
-
-}
-
-@media (max-width: 420px) {
-
-}
-
-
-@media (max-width: 400px) {
-
+  .qualifications-container{
+    justify-content: center;
+  }
+  .qualification {
+    width: 29%;
+  }
 }
 
 @media (max-width: 375px) {
@@ -108,7 +96,6 @@
     align-items: center;
     flex-direction: column;
   }
-
   .qualification {
     width: 90%;
   }
