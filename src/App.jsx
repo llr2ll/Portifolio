@@ -23,11 +23,9 @@ function App() {
       <Experience />
       <Formation />
       <Footer />
-      <Contact />
-      
+      <Contact /> 
     </>
       
   );
 }
-
 export default App;

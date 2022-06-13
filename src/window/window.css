@@ -54,12 +54,19 @@
 
 }
 @media (max-width: 425px) {
-
+   .modal{
+    position: absolute;
+    overflow: scroll;
+  }
 }
 
 @media (max-width: 375px) {
   .modal{
     position: absolute;
     overflow: scroll;
+  }
+   .certificateModal {
+    width: 400px;
+    height: 440px;
   }
 }

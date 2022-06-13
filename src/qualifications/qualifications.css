@@ -84,6 +84,7 @@
 @media (max-width: 375px) {
   .about-container {
     overflow: scroll;
+    flex-wrap: wrap;
     height: 620px;
     display:flex;
     padding: 10px;
@@ -92,7 +93,6 @@
  .qualifications-container {
     display: flex;
     width: 100%;
-    flex-wrap: nowrap;
     align-items: center;
     flex-direction: column;
   }

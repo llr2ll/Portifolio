@@ -11,7 +11,7 @@ const Window = (props) => {
     <>   
          <button className="Card-button" onClick={toggle}>view more</button>
 
-         <Modal isOpen={modalIsOpen} ariaHideApp={false}  onRequestClose={toggle} className="modal">
+         <Modal isOpen={modalIsOpen} ariaHideApp={false} onRequestClose={toggle} className="modal">
            
             {props.children}
             <button className="close" onClick={toggle}>×</button>  

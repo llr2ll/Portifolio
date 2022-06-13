@@ -1,6 +1,6 @@
 import './home.css';
 import React from "react";
-import img from '/jpg/dazai.jpg';
+import img from '/jpg/avatar.png';
 import { BsMouse } from 'react-icons/bs';
 import {FaReact} from 'react-icons/fa';
 import {SiElectron} from 'react-icons/si';
