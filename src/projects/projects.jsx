@@ -6,7 +6,7 @@ function Projects() {
     
   return (
     <>
-      <h1 className='projects-title' >Projects</h1>
+      <h1 className='projects-title'>Projects I Worked</h1>
       <div className="projects">
         {data.map( (obj) =>
          <a href={obj.link} key={obj.id} className="project">
