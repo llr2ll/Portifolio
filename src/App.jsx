@@ -7,6 +7,7 @@ import Nav from './nav/nav';
 import Certificates from './certificates/certificates';
 import Formation from "./formation/formation";
 import Experience from "./experience/experience";
+import Projects from './projects/projects'
 import Footer from "./footer/footer";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Certificates />
       <Experience />
       <Formation />
+      <Projects />
       <Footer />
       <Contact /> 
     </>

@@ -35,7 +35,7 @@ function Home() {
       
       <div  className='logo'>
               
-        <div className={arr} >
+        <div className={arr}>
           <span className='circle'><FaReact /></span>
           <span className='circle' ><FaNodeJs /></span>
           <span className='circle'><SiJavascript /></span>

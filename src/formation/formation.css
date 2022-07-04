@@ -130,10 +130,6 @@
       width: 70%;
       padding: 0;
     }
-    .warp{
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
     .formation-container .formation {
       margin-top: 20px;
       justify-content: center;
@@ -163,7 +159,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     }
+    .warp{
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
     .img{
-     height: 50%;
+     display: flex;
+     transform: rotate(90deg);    
   }
 }

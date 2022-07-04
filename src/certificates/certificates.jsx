@@ -5,7 +5,7 @@ import {data} from './data';
 import Content from './content'
 
 const Certificates = (props) => {
-
+  
   return (
 
     <main id="certificates" >
@@ -26,7 +26,7 @@ const Certificates = (props) => {
                     <div className="Card-shadow"></div>
                     <img className="Card-image" src={obj.thumb} />
                     
-                    <Window > <Content jsonFilter={obj} /> </Window>
+                    <Window> <Content jsonFilter={obj} /> </Window>
                   </div>
                     
                   <div className="Card-title"> <span>{obj.title}</span> </div>
