@@ -19,11 +19,11 @@ function App() {
       <div className="bg-circle2"></div>
       <Nav/>
       <Home />
-      <Qualifications />
+      <Projects />
       <Certificates />
       <Experience />
       <Formation />
-      <Projects />
+      <Qualifications />
       <Footer />
       <Contact /> 
     </>

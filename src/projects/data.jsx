@@ -34,5 +34,17 @@ export const data = [
     img: '/jpg/nutricao.png',
     text: 'Aparecida Nutricionista',
     link: 'https://dancing-pastelito-304816.netlify.app/'  
+  },
+  {
+    id: 7,
+    img: 'https://dgsolutions.com.br/wp-content/uploads/2021/04/logo-dgsolutions-azul.png',
+    text: 'Dg Solutions',
+    link: 'https://dg-solutions-mcvdg686b-llr2ll.vercel.app'
+  },
+  {
+    id: 8,
+    img: '/jpg/movie.png',
+    text: 'Filmes Online',
+    link: 'https://filmes-api-front-end.vercel.app'
   }
 ]

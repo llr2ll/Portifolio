@@ -10,17 +10,13 @@
 }
 .projects{
   display:flex;
-  margin: 0 8%;
-  background: rgba(0, 0, 0, 0.116);
+  margin: 0 8% 10%;
+  background: rgba(0, 0, 0, 0.350);
   backdrop-filter: blur(20px);
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-}
-
-.projects:hover{
-  background: rgba(0, 0, 0, 0.030);
 }
 
 .project{
